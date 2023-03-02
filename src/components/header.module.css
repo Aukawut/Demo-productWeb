@@ -1,0 +1,131 @@
+.imgHeader {
+    width: 100%;
+}
+
+.textSm {
+    font-size: 20px;
+}
+
+.numberXl {
+    font-size: 5rem;
+}
+
+.textType {
+    font-size: 1.5rem;
+}
+
+.childDetails {
+    margin-left: 1rem;
+}
+
+.childDetails p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width:1920px) {
+    .imgProduct {
+        border-radius: 10px;
+        width: 450px;
+        margin-bottom: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .qrcode1 {
+        width: 15rem;
+    }
+
+    .qrcode2 {
+        margin-top: 92px;
+        width: 10rem;
+    }
+
+    .contact {
+        margin-top: 30px;
+        padding: 10px;
+        border: 1px solid #79DCFC;
+        border-radius: 10px;
+    }
+
+    .contact p {
+        font-size: 20px;
+
+    }
+
+    .logoContact {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .footer {
+        height: 6rem;
+        background: rgb(158, 191, 255);
+        background: linear-gradient(90deg, rgba(158, 191, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:992px) {
+    .qrcode2 {
+        margin-top: 18px;
+        width: 10rem;
+        margin-left: 8px;
+    }
+}
+@media only screen and (max-width:640px) {
+    .qrcode2 {
+        margin-top: 92px;
+        width: 10rem;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .imgProduct {
+        border-radius: 10px;
+        width: 300px;
+        margin-bottom: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .footer p:nth-child(1) {
+        margin-top: 15px;
+        font-size: 17px;
+
+
+    }
+    .footer p:nth-child(2) {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .qrcode1 {
+        width: 12rem;
+    }
+
+    .qrcode2 {
+        margin-top: 73px;
+        width: 8rem;
+        margin-left: 8px;
+    }
+
+    .wrapperImg {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+@media only screen and (max-width:420px) {
+    .qrcode2 {
+        margin-top: 92px;
+        width: 10rem;
+        margin-left: 8px;
+    }
+}
