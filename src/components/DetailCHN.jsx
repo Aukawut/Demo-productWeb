@@ -29,6 +29,7 @@ import { fadeIn, textVariant } from "../utils/motion"
 import { FaAngleUp } from "react-icons/fa"
 import ScrollToTop from "react-scroll-to-top"
 import Header from "./Header"
+import { useLanguageStore } from "../store"
 const DetailCHN = () => {
   const [showTopBtn, setShowTopBtn] = useState(false)
   const isL = useLanguageStore((state) => state.language)
