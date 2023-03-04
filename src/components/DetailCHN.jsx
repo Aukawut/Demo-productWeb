@@ -17,6 +17,7 @@ import product6 from "/Pic06.jpg"
 import product61 from "/Pic06-1.jpg"
 import product7 from "/Pic07.jpg"
 import product8 from "/Pic08.jpg"
+import mega from '/megaphone.png'
 import qr1 from "/qr1.jpg"
 import qr2 from "/qr2.jpg"
 import mail from "/mail.png"
@@ -26,13 +27,11 @@ import { motion } from "framer-motion"
 import { staggerContainer } from "../utils/motion"
 import { fadeIn, textVariant } from "../utils/motion"
 import { FaAngleUp } from "react-icons/fa"
-import mega from '/megaphone.png'
-import Header from './Header'
 import ScrollToTop from "react-scroll-to-top"
-import { useLanguageStore } from "../store"
-const Detail = () => {
+import Header from "./Header"
+const DetailCHN = () => {
   const [showTopBtn, setShowTopBtn] = useState(false)
-  const isL = useLanguageStore((state) => state.language)
+  
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
@@ -49,7 +48,7 @@ const Detail = () => {
     })
   }
   return (
-    <>
+    <div className={`${css.chn}`}>
     <Header />
       <ScrollToTop
         smooth={true}
@@ -86,16 +85,7 @@ const Detail = () => {
               <hr />
               <div>
                 <p className={`${css.textSm}`}>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โครงการผลิตเครื่องปรับอากาศของบริษัทไฮเซ่นส์(ประเทศไทย)
-                  ได้ร่วมมือกับบริษัท SNC ตั้งแต่ปี 2019 ตั้งอยู่ในจังหวัดระยอง
-                  ธุรกิจหลักคือผลิตเครื่องปรับอากาศโดยการร่วมมือกันระหว่างทั้งสองฝ่ายเป็นการผลิตแบบ
-                  OEM หลังจากที่มีการร่วมมือและพัฒนาร่วมกันมาหลายปี
-                  เราได้เติบโตและประสบความสำเร็จ จนกระทั้งเดือนมีนาคม ปี 2023
-                  มียอดผลิตส่งออกแล้วมากกว่า 2.2 ล้านชุด
-                  ในขณะเดียวกันปีนี้เราหวังว่าจะได้ร่วมมือกับซัพพลายเออร์ที่มีคุณภาพในหลากหลายเครือข่ายมากขึ้น
-                  ขณะนี้ทางเรากำลังมองหาซัพพลายเออร์ที่เป็นผู้ผลิตและจำหน่ายวัสดุต่างๆ
-                  สำหรับโครงการผลิตเครื่องปรับอากาศบริษัทไฮเซ่นส์(ประเทศไทย)
-                  ดังนี้
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海信空调公司泰国项目从2019年起开展与SNC公司的合作，位于罗勇府，主营业务为空调整机产品的生产，双方合作方式为OEM代工，经过多年的合作发展，我们互相成长、彼此成就，截至2023年3月实际产出超过220万套，同时23年度我们希望可以和更多领域的优秀供方合作，现公开海信空调公司泰国项目采购信息；
                 </p>
               </div>
             </div>
@@ -126,16 +116,14 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={one} alt="number" style={{ width: "5rem" }} />
-                ท่อทองแดง (Copper pipe)
+                铜管
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                  ① มีกำลังการผลิตในทุกกระบวนการ เช่น การตัดท่อ การดัดท่อ
-                  การขึ้นรูป การจัดพอร์ต และ การเชื่อม เป็นต้น
-                  มีประสิทธิภาพในการทดสอบบางประเภท
+                  ① 具有铜管开料、弯管成型、端口处理、焊接等全流程生产能力，具备一定型式试验能力；
                 </p>
-                <p>② ความต้องการต่อปีประมาณ 8 ล้านชิ้น</p>
+                <p>② 年需求总量约800万件</p>
               </div>
               <div
                 style={{ width: "100%" }}
@@ -165,15 +153,14 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={two} alt="number" style={{ width: "5rem" }} />
-                ใบพัดลม (fan)
+                风扇
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                  ① พัดลมชนิด Axial Fans และพัดลมชนิด centrifugal fan
-                  ที่สามารถเปิดแม่พิมพ์ร่วมกันได้ และมีประสิทธิภาพในการทดสอบ
+                  ① 轴流风扇、离心风扇，可配合开模，具备风扇型式试验能力
                 </p>
-                <p>② ความต้องการต่อปีประมาณ 2.5 ล้านชิ้น</p>
+                <p>② 年需求总量约250万件</p>
               </div>
               <div
                 style={{ width: "100%" }}
@@ -204,14 +191,14 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={three} alt="number" style={{ width: "5rem" }} />
-                ท่อลมแอร์
+                风管
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                  ① มีกำลังในการผลิตชิ้นส่วนขึ้นรูปและมีประสิทธิภาพในการทดสอบ
+                  ① 具备挤塑件生产能力和检验能力
                 </p>
-                <p>② ความต้องการต่อปีประมาณ 600,000 ชิ้น</p>
+                <p>② 年需求总量约60万件</p>
               </div>
               <div
                 style={{ width: "100%" }}
@@ -241,21 +228,19 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={four} alt="number" style={{ width: "5rem" }} />
-                แผง PCBA (PCBA Board )
+                五、PCBA
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                  ① มีเครื่องแทรกอัตโนมัติ AI SMT( Auto insertion surface
-                  mount) เครื่องบัดกรีคลื่น(Wave Soldering Machine)
-                  และเครื่องตรวจจับความผิดพลาดของบอร์ด PCB เป็นต้น
+                  ① 设备AI卧式、SMT、波峰焊、防呆检验等设备
                 </p>
                 <p>
-                  ② มีช่องทางการจัดซื้อที่มีคุณภาพสำหรับชิ้นส่วนอิเล็กทรอนิกส์จะพิจารณาเป็นพิเศษ
+                  ② 具备完整电子元器件采购渠道优先
                 </p>
                 <p>
                   ③
-                  ความต้องการต่อปีประมาณ 600,000 ชิ้น
+                  年需求总量约60万件
                 </p>
               </div>
               <div
@@ -286,15 +271,15 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={five} alt="number" style={{ width: "5rem" }} />
-                โฟม (foam)
+                六、泡沫
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                  ① มีกำลังในการผลิตโฟมกันกระแทก และโฟมโครงสร้าง
+                  ① 包装泡沫、结构泡沫
                 </p>
                 <p>
-                  ② ความต้องการต่อปีประมาณ 4 ล้านชิ้น
+                  ② 年需求总量约400万件
                 </p>
 
               </div>
@@ -332,15 +317,15 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={six} alt="number" style={{ width: "5rem" }} />
-                กล่องกระดาษ (carton box)
+                七、纸箱
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                  ① มีเครื่องพิมพ์สี (6+1 สี), เครื่องตัด, เครื่องเคลือบ และอุปกรณ์ตรวจสอบอื่นๆ
+                  ① 具备彩色打印机（6+1色），裁切机、裱纸机、检验设备等
                 </p>
                 <p>
-                  ② ความต้องการต่อปีประมาณ 1.8 ล้านชิ้น
+                  ② 年需求总量约180万件
                 </p>
               </div>
               <div
@@ -371,14 +356,14 @@ const Detail = () => {
             >
               <p className={`${css.textType}`}>
                 <img src={seven} alt="number" style={{ width: "5rem" }} />
-                กัสเซต (Gusset) 
+                角撑
               </p>
-              <h5>ข้อกำหนด:</h5>
+              <h5>要求:</h5>
               <div className={`${css.childDetails}`}>
                 <p>
-                ① มีกำลังในการผลิตกระดาษฉากขึ้นรูป มีเครื่องยิงตะปูและเครื่องติดกาว
+                ① 具备纱管纸生产、设备打钉、涂胶
                 </p>
-                <p>② ความต้องการต่อปีประมาณ  3 ล้านชิ้น</p>
+                <p>② 年需求总量300万件</p>
            
               </div>
               <div
@@ -449,11 +434,7 @@ const Detail = () => {
               variants={fadeIn("bottom", "tween", 0.2, 1)}
             >
               <p className={`mt-4`}>
-                เพื่อเติบโตและพัฒนาซัพพลายเชน (Supply chain) ของประเทศไทย
-                รวมทั้งขยายเครือข่ายความร่วมมือทางด้านอุตสาหกรรมให้กว้างขึ้น
-                ตอนนี้ทางเราเปิดรับซัพพลายเออร์และหุ้นส่วน
-                เราพร้อมและยินดีที่จะร่วมงานกับคุณ สำหรับข้อมูลเพิ่มเติม
-                ติดต่อช่องทางดังนี้
+              为完善泰国供应链的培养以及发展，也为进一步扩宽合作领域，现面向全泰国供应商合作伙伴，诚邀加入我们的供应链，详细信息请联系以下：
               </p>
             </motion.div>
             <div className="d-flex justify-content-center flex-column">
@@ -496,7 +477,7 @@ const Detail = () => {
                             className={`${css.logoContact}`}
                             alt="imgContact"
                           />{" "}
-                          Mr.Liang Zhen Yi  และ  Mr.Sittipong
+                          Mr.Liang Zhen Yi  和  Mr.Sittipong
                         </p>
                         <p>
                           <img
@@ -504,7 +485,7 @@ const Detail = () => {
                             className={`${css.logoContact}`}
                             alt="imgContact"
                           />{" "}
-                          094-023-2161 หรือ 099-1909-259 
+                          094-023-2161 、 099-1909-259
                         </p>
                         <p>
                           <img
@@ -512,19 +493,23 @@ const Detail = () => {
                             className={`${css.logoContact}`}
                             alt="imgContact"
                           />{" "}
-                          Sittipong-hit@sncformer.com และ Liangzhenyi@hisense.com
+                          Sittipong-hit@sncformer.com 、 Liangzhenyi@hisense.com
                         </p>
+                        
                       </motion.div>
+                      
                     </div>
+                    <div>
                     <motion.div
                        variants={fadeIn("left", "tween", 0.2, 1)}
                     className="d-flex justify-content-center mt-3">
                       
                       <div className={`${css.boxMega}`}>
-                        <p style={{fontWeight:'bold',fontSize:'20px'}}><img src={mega} alt={"mega"}/>ประกาศนี้มีผลถึงวันที่ 30 มิถุนายน 2023</p>
+                        <p style={{fontWeight:'bold',fontSize:'20px'}}><img src={mega} alt={"mega"}/>本篇公告有效期截止2023年6月30日</p>
                       </div>
                       </motion.div>
-                    
+                      
+                    </div>
                   </div>
                 </div>
               </div>
@@ -538,8 +523,8 @@ const Detail = () => {
           เลขที่ 88/21-24 หมู่2 ตำบลมะขามคู่ อำเภอนิคมพัฒนา จังหวัดระยอง 21180
         </p>
       </div>
-    </>
+    </div>
   )
 }
 
-export default Detail
+export default DetailCHN

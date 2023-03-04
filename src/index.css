@@ -57,3 +57,6 @@ body::-webkit-scrollbar-button {
   color: #2580d0;
   border: 2px solid #2580d0;
 }
+.chn{
+  font-family: 'Noto Sans HK', sans-serif !important;
+}
