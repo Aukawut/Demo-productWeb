@@ -8,7 +8,11 @@ function App() {
   useEffect(() => {
     if(L == null || L==undefined){
       setL("TH")
+      localStorage.setItem("L","TH")
     }
+    // if(localStorage.getItem("L" == null || localStorage.getItem("L") == undefined)){
+    //   localStorage.setItem("L","TH")
+    // }
 
   },[])
   return (
