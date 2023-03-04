@@ -31,7 +31,7 @@ import ScrollToTop from "react-scroll-to-top"
 import Header from "./Header"
 const DetailCHN = () => {
   const [showTopBtn, setShowTopBtn] = useState(false)
-  
+  const isL = useLanguageStore((state) => state.language)
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
@@ -40,6 +40,9 @@ const DetailCHN = () => {
         setShowTopBtn(false)
       }
     })
+    if(isL === null || isL == undefined || isL === 'null' || isL === 'undefined' ){
+      localStorage.setItem("L","TH")
+    }
   }, [])
   const goToTop = () => {
     window.scrollTo({
