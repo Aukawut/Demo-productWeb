@@ -41,7 +41,11 @@ const Detail = () => {
         setShowTopBtn(false)
       }
     })
+    if(isL === null || isL == undefined || isL === 'null' || isL === 'undefined' ){
+      localStorage.setItem("L","TH")
+    }
   }, [])
+
   const goToTop = () => {
     window.scrollTo({
       top: 0,
