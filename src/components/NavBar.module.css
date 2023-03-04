@@ -10,6 +10,18 @@
         text-align: center;
     }
 }
+@media only screen and (max-width:1336px) {
+    .boxL {
+        width: 100%;
+        padding: 0px 2px;
+        height: auto;
+        border: 1px solid red;
+        cursor: pointer;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+}
 @media only screen and (max-width:578px) {
     .boxL {
         width: 15%;
