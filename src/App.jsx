@@ -6,7 +6,7 @@ import DetailCHN from './components/DetailCHN'
 function App() {
  const [L,setL] = useState(localStorage.getItem("L"))
   useEffect(() => {
-    if(L == null || L==undefined){
+    if(L == null || L==undefined || L=="null"|| L=="undefined"){
       setL("TH")
       localStorage.setItem("L","TH")
     }
