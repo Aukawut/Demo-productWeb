@@ -10,10 +10,7 @@ function App() {
       setL("TH")
       localStorage.setItem("L","TH")
     }
-    // if(localStorage.getItem("L" == null || localStorage.getItem("L") == undefined)){
-    //   localStorage.setItem("L","TH")
-    // }
-
+    console.log(L);
   },[])
   return (
     <div className="App">
