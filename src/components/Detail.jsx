@@ -45,7 +45,6 @@ const Detail = () => {
       localStorage.setItem("L","TH")
     }
   }, [])
-
   const goToTop = () => {
     window.scrollTo({
       top: 0,

@@ -1,7 +1,7 @@
 import { create } from "zustand"
 
 export const useLanguageStore = create((set) => ({
-  language: localStorage.getItem("L"),
+  language: "TH",
   changeL: () =>
     set((state) => ({
       language:
